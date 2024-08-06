@@ -170,6 +170,20 @@
             timeout-ms = <200>;
             layers = <2>;
         };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <7 8>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
     };
 
     keymap {
