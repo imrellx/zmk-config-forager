@@ -129,7 +129,7 @@
         lh: layer_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_HOLD";
-            bindings = <&kp>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <160>;
@@ -152,14 +152,14 @@
 
         base {
             bindings = <
-  &kp Q           &kp W           &kp E               &kp R             &kp T     &kp Y   &kp U              &kp I                &kp O            &kp P
-  &hp LEFT_GUI A  &hr LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G     &kp H   &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hp RIGHT_ALT L  &hp RIGHT_GUI SEMICOLON
-  &kp Z           &kp X           &kp C               &kp V             &kp B     &kp N   &kp M              &kp COMMA            &kp DOT          &kp FSLH
-                                                      &trans            &trans    &trans  &trans
+  &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U              &kp I                &kp O            &kp P
+  &hp LEFT_GUI A  &hr LEFT_ALT S  &hm LEFT_CONTROL D  &hm LEFT_SHIFT F  &kp G          &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_CONTROL K  &hp RIGHT_ALT L  &hp RIGHT_GUI SEMICOLON
+  &kp Z           &kp X           &kp C               &kp V             &kp B          &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH
+                                                      &lh 1 BACKSPACE   &lh 2 ENTER    &lh 2 TAB  &lh 1 SPACE
             >;
         };
 
-        nav {
+        num {
             bindings = <
   &trans  &trans     &trans    &trans    &trans    &kp PAGE_UP    &kp LC(PG_UP)  &kp UP    &kp LC(PG_DN)  &kp DELETE
   &trans  &kp LCTRL  &kp LALT  &kp LGUI  &trans    &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT      &kp BSLH
@@ -168,7 +168,7 @@
             >;
         };
 
-        sym {
+        nav {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
