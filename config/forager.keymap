@@ -84,10 +84,10 @@
 
         base {
             bindings = <
-            &kp Q           &kp W           &kp F           &kp P           &kp B                                           &kp J           &kp L           &kp U           &kp Y           AS(SEMI)
-            &kp A           &lhm LCTRL R    &lhm LALT S     &lhm LGUI T     &kp G                                           &kp M           &rhm LGUI N     &rhm LALT E     &rhm LCTRL I    &kp O
-            &kp Z           &kp X           &kp C           &kp D           &kp V                                           &kp K           &kp H           AS(COMMA)       AS(DOT)         AS(FSLH)
-                                                                            &sym_bspc 2 0   &smart_shift    &smart_shift    &lt NAV SPACE
+            &kp Q           &kp W           &kp F           &kp P           &kp B                                           &kp J           &kp L           &kp U           &kp Y           &kp Q
+            &kp A           &kp Q           &kp Q           &kp Q           &kp G                                           &kp M           &kp Q           &kp Q           &kp Q           &kp O
+            &kp Z           &kp X           &kp C           &kp D           &kp V                                           &kp K           &kp H           &kp Q           &kp Q           &kp Q
+                                                                            &trans   &trans    &trans    &trans
             >;
         };
 
@@ -96,16 +96,16 @@
             &trans          &trans          &trans          &trans          &trans                                          &kp PAGE_UP     &kp LC(PG_UP)   &kp UP          &kp LC(PG_DN)   &kp DELETE
             &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                                          &kp PAGE_DOWN   &kp LEFT        &kp DOWN        &kp RIGHT       &kp BSLH
             &trans          &trans          &trans          &trans          &trans                                          &trans          &kp HOME        &kp END         &kp LC(SPACE)   &kp LC(SPACE)
-                                                                            &mo SYM         &kp LSHFT       &trans          &trans
+                                                                            &trans         &trans       &trans          &trans
             >;
         };
 
         sym {
             bindings = <
-            AS(N1)          AS(N2)          AS(N3)          AS(N4)          AS(N5)                                          AS(N6)          AS(N7)          AS(N8)          AS(N9)          AS(N0)
-            AS(GRAVE)       &sk LCTRL       &sk LALT        &sk LGUI        &sk LC(LALT)                                    AS(BSLH)        AS(MINUS)       AS(EQUAL)       AS(LBKT)        AS(RBKT)
+            &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
+            &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &trans
             &trans          &trans          &trans          &trans          &trans                                          &trans          &trans          &trans          &trans          &kp ENTER
-                                                                            &trans          &trans          &kp LSHFT       &mo NAV
+                                                                            &trans          &trans          &trans       &trans
             >;
         };
 
